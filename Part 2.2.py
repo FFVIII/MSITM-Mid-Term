@@ -4,3 +4,7 @@
 #       - Compute basic stats (mean, median, std, etc.).
 #       - Identify correlations, outliers, or data imbalances.
 #       - Use pandas describe(), info(), corr() for an overview.
+
+print("---------- 2.2 Perform Exploratory Data Analysis (EDA) and Visualize Key Insights ----------")
+print("\n---------- Cleaned Data Summary: ----------")
+print(df.describe())
