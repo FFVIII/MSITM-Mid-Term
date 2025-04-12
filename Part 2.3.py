@@ -118,18 +118,4 @@ f1 = f1_score(y_test_clf, y_pred_clf)
 print(f"Accuracy: {accuracy:.2f}")
 print(f"F1 Score: {f1:.2f}")
 
-print("---------- Basic Hyperparameter Tuning ----------")
 
-# Define parameter grid
-param_grid = {
-    'C': [0.001, 0.01, 0.1, 1, 10, 100],
-    'penalty': ['l1', 'l2'],
-    'solver': ['liblinear']
-}
-
-# Set up GridSearchCV
-grid_search = GridSearchCV(RandomForestClassifier(), param_grid, cv=2)
-grid_search.fit(X_train_clf,  y_train_clf)
-
-# Best parameters
-print(f"Best Parameters: {grid_search.best_params_}")
