@@ -123,14 +123,12 @@ def code2_2():
     plt.show()
 
 def code2_3():
+    # 2.3 Build and Evaluate a Machine Learning Model
     #   (a) Model Building
     #       - Requirement: At least 2 different ML algorithms 
     #         (e.g., Logistic Regression, Random Forest, Linear Regression, etc.).
     #       - Tips: Match the algorithm type to your target variable 
     #         (classification vs. regression).
-
-    # Load a dataset
-    df = pd.read_csv("youtube_dataset.csv")
 
     print("---------- Linear Regression ----------")
     X_reg = df[['Total Videos']]  
@@ -186,7 +184,6 @@ def code2_3():
     #         Consider basic hyperparameter tuning.
 
     print("---------- Evaluating a Regression Model ----------")
-    # Sample data (replace with your own)
     X_train_reg = [[10], [20], [30]]  # Total Videos
     y_train_reg = [5, 10, 15]         # Avg Video Length (min)
     X_test_reg = [[25], [35]]         # Test data
@@ -205,7 +202,6 @@ def code2_3():
     print(f"RMSE: {rmse:.2f} minutes")
 
     print("---------- Evaluating a Classification Model ----------")
-    # Sample data (replace with your own)
     X_train_clf = [[10], [20], [30]]  # Total Videos
     y_train_clf = [0, 1, 1]           # Compatible (0 = False, 1 = True)
     X_test_clf = [[15], [25]]         # Test data
