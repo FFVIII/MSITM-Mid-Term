@@ -45,7 +45,7 @@ def code2_1():
     df_dropped = df.dropna()
     print("\nData After Dropping Missing Values:\n", df_dropped)
 
-    print("---------- DFilling Missing Values----------")
+    print("---------- Filling Missing Values----------")
     df_filled = df.fillna(0)
     print("\nData After Filling Missing Values:\n", df_filled)
 
@@ -149,7 +149,6 @@ def code2_3():
     y_pred_reg = lin_reg.predict(X_test_reg)
     print(f"R^2 Score: {r2_score(y_test_reg, y_pred_reg):.4f}")
     print(f"Mean Squared Error: {mean_squared_error(y_test_reg, y_pred_reg):.4f}")
-
 
     print("---------- Logistic Regression (Classification) ----------")
     # Features
